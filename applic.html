@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Заявка</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="buttons">
+        <a href="index.html"
+          ><button class="btn" type="button">Выйти</button></a
+        >
+        <a href="profile.html"
+          ><button class="btn" type="button">Личный кабинет</button></a
+        >
+        <a href="admin.html"
+          ><button class="btn" type="button">Админ</button></a
+        >
+      </div>
+      <div class="registration_field">
+        <h1>Мой ремонт</h1>
+        <h2>Подача заявки</h2>
+
+        <form action="#" method="post" class="applic_form">
+
+          <label for="address">Адрес</label>
+          <input type="text" name="address" id="address" required />
+
+          <label for="service">Тип ремонта</label>
+          <select name="service" id="service" required>
+            <option value="" disabled selected>Выберите услугу</option>
+            <option value="Косметический ремонт">Косметический ремонт</option>
+            <option value="Капитальный ремонт">Капитальный ремонт</option>
+            <option value="Электромонтаж">Электромонтаж</option>
+          </select>
+
+          <label for="date">Дата начала работ</label>
+          <input type="date" name="date" id="date" required />
+
+          <label for="time">Время начала работ</label>
+          <input type="time" name="time" id="time" required />
+
+          <label for="payment">Тип оплаты</label>
+          <select name="payment" id="payment" required>
+            <option value="" disabled selected>Выберите способ оплаты</option>
+            <option value="Наличными">Наличными</option>
+            <option value="Картой">Картой</option>
+          </select>
+
+          <button type="submit">Создать</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
